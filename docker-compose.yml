@@ -1,0 +1,10 @@
+version: "3.7"
+services:
+    app:
+        build: ./
+        image: pyvhr-img
+        container_name: pyvhr-container
+        ports:
+            - "8888:8888"
+        volumes:
+            - .:/app
