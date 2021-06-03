@@ -21,7 +21,7 @@ Eight well-known rPPG methods, namely  *ICA*,  *PCA*, *GREEN,CHROM*, *POS*, *SSR
 ![pyVHR](https://raw.githubusercontent.com/phuselab/pyVHR/master/img/frameworkVHR.png)
 
 ## Installation
-
+### Locally (Linux only)
 Install the dependency first:
 
 ```text
@@ -39,6 +39,16 @@ or download from source and install via:
 
 ```text
 $ python setup.py install
+```
+
+### Using docker
+```text
+$ docker-compose up
+```
+You can then connect to the Jupyter notebook server from outside the docker container. You will find in the console the url with the token.
+To work without using notebooks or simply to access the container, run:
+```text
+$ docker exec -it <container-name(default: 'pyvhr-dev')> bash
 ```
 
 ## Usage
